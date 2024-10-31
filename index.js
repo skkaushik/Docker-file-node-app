@@ -1,8 +1,8 @@
 const express = require('express');
 const app = express();
 
-app.get("/", (req, res) =>{
-    res.json[
+app.get("/", (req, res) => {
+    res.json([
         {
             id: 1,
             name: 'Sachin Kaushik',
@@ -23,9 +23,9 @@ app.get("/", (req, res) =>{
             name: 'Vidya Sharma',
             age: 19
         }
-    ]
+    ]);
 });
 
-app.listen(5000, () => {
-    console.log("Server is running on 5000 port")
-})
+app.listen(6000, () => {
+    console.log("Server is running on 6000 port")
+});
